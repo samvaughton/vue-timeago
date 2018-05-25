@@ -50,10 +50,10 @@ export const createTimeago = (opts = {}) => {
                 this.title :
                 this.title === false ?
                   null :
-                  this.timeago
+                  this.convert(this.since)
           }
         },
-        [this.timeago]
+        [this.convert(this.since)]
       )
     },
 
